@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U\nU"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="-10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell\np"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="-10dp"
+        />
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/white"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="Search"
+                android:layout_marginStart="5dp"
+                android:background="@color/white"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:src="@drawable/ic_head_phone"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:src="@drawable/ic_support"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:src="@drawable/ic__bar_code"
+                />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

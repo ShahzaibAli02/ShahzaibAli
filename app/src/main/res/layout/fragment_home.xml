@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <include
+            layout="@layout/lyt_header"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewHeaderTile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/lyt_head_tile"
+            android:background="@color/gray"
+            />
+        <include
+            android:id="@+id/lytHeader"
+            layout="@layout/lyt_ad"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best practice Defination and meaning"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Shop"
+                android:textSize="15dp"
+                app:cornerRadius="5dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#039BE5"
+                />
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/lyt_category"
+            android:background="#E1E0E0"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Best Title"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:paddingStart="10dp"
+            android:background="@color/gray"
+            android:fontFamily="@font/poppins"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:itemCount="6"
+            tools:listitem="@layout/lyt_product"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Top Title"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:paddingStart="10dp"
+            android:background="@color/gray"
+            android:fontFamily="@font/poppins"
+            />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/lyt_user"
+            android:background="@color/white"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="#Shop By Category"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/poppins"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+
+                android:fontFamily="@font/poppins"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <include
+                android:id="@+id/subCat1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                layout="@layout/lyt_sub_category"/>
+            <include
+                android:id="@+id/subCat2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                layout="@layout/lyt_sub_category"/>
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewBody2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:itemCount="3"
+            tools:listitem="@layout/lyt_product"
+            android:background="@color/white"
+            />
+
+
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/lyt_footer"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
